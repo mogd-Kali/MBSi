@@ -29,7 +29,7 @@ function loginOrCreate() {
             // Создание нового аккаунта
             wallet = {
                 address: generateAddress(),
-                balance: 925343237, // Начальный баланс
+                balance: 92, // Начальный баланс
                 transactions: []
             };
             users[seedPhrase] = wallet;
