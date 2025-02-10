@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Cryptocurrency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>coin mbs </h1>
+<hr>
+        <div id="login">
+            
+            <input type="text" id="seedPhrase" placeholder="введите сид-фразу">
+  <hr>        
+ <button onclick="loginOrCreate()">дальше</button>
+   <hr>     
+</div>
+        <div id="wallet" style="display:none;">
+            <h2>кошелёк</h2>
+            <p>ваш mbs-адрес: <strong id="userAddress"></strong></p>
+<hr>
+            <p>ваш mbs баланс: <span id="balance">0</span> монет</p>
+<hr>
+            <input type="text" id="recipient" placeholder="адрес кошелька">
+            <input type="number" id="amount" placeholder="количество">
+<hr>
+            <button onclick="sendCoins()">отправить</button>
+            <h3>история транзакций</h3>
+<hr>
+            <ul id="transactions"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+<body bgcolor="#1F2732">
+</body>
+</html>
